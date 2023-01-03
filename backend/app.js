@@ -10,10 +10,10 @@ let PORT = 3003;
 
 
 app.use(express.urlencoded({extended: false}))
-app.use(express.static(path.join(__dirname, 'public')))
+app.use(express.static(path.join(__dirname, '/frontend/public')))
 app.use(router)
 
-app.set('views', path.join(__dirname, '../views'));
+app.set('views', path.join(__dirname, '../frontend/views'));
 app.set('view engine', "ejs");
 //app.set('views', path.join(__dirname, 'views'));
 
